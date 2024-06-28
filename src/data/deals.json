@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "issuer_name": "Tech Innovations Inc.",
+      "deal_name": "Series A Funding",
+      "bloomberg_id": "TII12345",
+      "total": 5000000.00,
+      "industry": "Technology",
+      "status": "Closed",
+      "analysts": ["John Doe", "Jane Smith"],
+      "doc_count": 15,
+      "custom_deal_identifiers": ["TI-2023-A", "TI-INV-123"]
+    },
+    {
+      "id": 2,
+      "issuer_name": "Green Energy Ltd.",
+      "deal_name": "Renewable Bond Issuance",
+      "bloomberg_id": "GEL67890",
+      "total": 10000000.00,
+      "industry": "Energy",
+      "status": "Open",
+      "analysts": ["Alice Johnson", "Bob Brown"],
+      "doc_count": 20,
+      "custom_deal_identifiers": ["GE-BOND-2024", "GE-RENEW-456"]
+    },
+    {
+      "id": 3,
+      "issuer_name": "Healthcare Holdings",
+      "deal_name": "Merger with MediCorp",
+      "bloomberg_id": "HCH23456",
+      "total": 7500000.50,
+      "industry": "Healthcare",
+      "status": "Pending",
+      "analysts": ["Charlie White", "Diana Green"],
+      "doc_count": 10,
+      "custom_deal_identifiers": ["HH-MC-2023", "HH-MERGER-789"]
+    }
+  ]
+  
