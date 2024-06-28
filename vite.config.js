@@ -10,5 +10,9 @@ export default defineConfig({
 				additionalData: '@import "./src/assets/styles/variables.scss";'
 			}
 		}
+	},
+	test: {
+		globals: true,
+		environment: 'jsdom'
 	}
 })

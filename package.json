@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "vue": "^3.4.29",
@@ -14,8 +16,14 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
+    "@vue/test-utils": "^2.4.6",
+    "coverage": "vitest run --coverage",
+    "jsdom": "^24.1.0",
     "sass": "^1.77.6",
     "sass-loader": "^14.2.1",
-    "vite": "^5.3.1"
+    "test": "vitest",
+    "vite": "^5.3.1",
+    "vitest": "^1.6.0",
+    "vue-test-utils": "^1.0.0-beta.11"
   }
 }
