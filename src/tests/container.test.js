@@ -7,8 +7,6 @@ describe('container.vue', () => {
 			slots: { default: `<h1>Hello world</h1>` }
 		})
 
-		console.log('wrapper', wrapper.html())
-
 		expect(wrapper.html()).toContain('Hello world')
 	})
 

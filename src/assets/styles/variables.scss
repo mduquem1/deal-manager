@@ -2,6 +2,19 @@ $primary-color: #334968;
 $font-stack: 'Helvetica Neue', sans-serif;
 
 
+// nav heights
+$header-height: 32px;
+$footer-height: 64px;
+
+
+// font-size
+$font-size-xs: 14px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 22px;
+$font-size-xl: 34px;
+
+
 // text colors
 $color-text-white: #fafafa;
 $color-surface-50: #f9fafb;
@@ -25,6 +38,8 @@ $breakpoint-xlarge: 1200px; // Large desktops
 
 
 // spacing
+$spacing-1: 1px;
+$spacing-4: 4px;
 $spacing-8: 8px;
 $spacing-16: 16px;
 $spacing-24: 24px;
@@ -33,5 +48,8 @@ $spacing-48: 48px;
 $spacing-64: 64px;
 $spacing-96: 96px;
 
+
+// border-radius
+$border-radius-4: 4px;
 
 

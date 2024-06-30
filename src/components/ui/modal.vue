@@ -24,13 +24,16 @@ function closeDetails() {
 }
 </script>
 
-<style>
+<style lang="scss">
 .details-content {
-	background: blue;
+	width: 50vw;
+	height: calc(100% - $footer-height);
+	background: #f0f4f8;
 	padding: 20px;
-	position: absolute;
-	top: 0;
+	position: fixed;
 	right: 0;
+	top: 0;
 	z-index: 10;
+	border-radius: $border-radius-4;
 }
 </style>

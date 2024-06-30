@@ -6,10 +6,10 @@
 
 <style lang="scss" scoped>
 .container {
-	position: absolute;
+	position: sticky;
 	bottom: 0;
 	width: 100vw;
-	height: $spacing-64;
+	height: $footer-height;
 	background-color: $primary-color;
 	color: $color-text-white;
 }

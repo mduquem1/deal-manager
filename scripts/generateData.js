@@ -27,6 +27,6 @@ fs.writeFile('generatedData.json', JSON.stringify(generatedData, null, 4), (err)
 	if (err) {
 		console.error('Error writing file:', err)
 	} else {
-		console.log('File has been written successfully')
+		console.info('File has been written successfully')
 	}
 })

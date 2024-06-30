@@ -2,7 +2,7 @@
 
 <template>
 	<header class="container">
-		<div>Logo</div>
+		<router-link class="link" to="/">Logo</router-link>
 		<nav class="nav-container">
 			<router-link class="link" to="/">Home</router-link>
 			<router-link class="link" to="/deals">Deals</router-link>
@@ -17,11 +17,11 @@
 	padding: $spacing-8 $spacing-32;
 	color: $color-text-white;
 	background-color: $primary-color;
+	height: $header-height;
 
-	.nav-container {
-		.link {
-			padding-right: $spacing-8;
-		}
+	.link {
+		padding-right: $spacing-8;
+		color: $color-text-white;
 	}
 }
 </style>
