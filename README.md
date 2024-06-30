@@ -6,7 +6,7 @@ Browse, select, search and export merger/acquisitions deals data.
 
 ## Run local server
 
-Make sure node is installed and your are running the same version available in `.nvmrc`.
+Make sure node is installed and you are running the same version available in `.nvmrc`.
 
 If you have `nvm` installed, run `nvm use` to run the specified node version.
 
@@ -15,6 +15,8 @@ Install dependencies
 ````bash
 yarn
 ````
+
+Run the local server
 
 ````bash
 yarn dev
