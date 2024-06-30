@@ -1,5 +1,4 @@
 export { useTableSort } from './useTableSort'
 export { useTableSearch } from './useTableSearch'
-export { useTablePagination } from './useTablePagination'
 export { useExportCSV } from './useExportCSV'
 export { useFuzzyMatch } from './useFuzzyMatch'

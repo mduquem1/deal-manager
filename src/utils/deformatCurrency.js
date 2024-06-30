@@ -1,8 +1,8 @@
-export default function deformatCurrency(amount) {
-	const moneyRegex = /[$,]/g
+export const MONEY_REGEX = /[$,]/g
 
-	if (moneyRegex.test(amount)) {
-		return parseInt(amount.replace(moneyRegex, ''))
+export default function deformatCurrency(amount) {
+	if (MONEY_REGEX.test(amount)) {
+		return parseInt(amount.replace(MONEY_REGEX, ''))
 	}
 	return amount
 }

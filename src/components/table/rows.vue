@@ -20,4 +20,8 @@ const isSelected = (index) => {
 	</tbody>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+input[type='checkbox'] {
+	cursor: pointer;
+}
+</style>

@@ -20,7 +20,7 @@ export function useFuzzyMatch(initialData = [], initialOptions = {}) {
 		return fuse.value.search(query).map((result) => result.item)
 	}
 
-	// Initialize if initial data and options are provided
+	// initialize if initial data and options are provided
 	if (initialData.length > 0 && Object.keys(initialOptions).length > 0) {
 		initialize(initialData, initialOptions)
 	}

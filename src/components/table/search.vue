@@ -23,6 +23,8 @@ const reset = (event) => {
 <template>
 	<form id="search-box" class="search-box">
 		<input
+			for="search-box"
+			name="search-box"
 			class="input"
 			type="text"
 			placeholder="Search for deals"

@@ -8,6 +8,7 @@ export function useTableSort() {
 
 	const sortFunction = computed(() => {
 		return (a, b) => {
+			// ensures "money" formatted strings are handled as numbers for correct sorting
 			const aValue = deformatCurrency(a[sortBy.value])
 			const bValue = deformatCurrency(b[sortBy.value])
 

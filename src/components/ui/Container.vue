@@ -22,10 +22,10 @@ const style = computed(() => ({
 <style lang="scss" scoped>
 .container {
 	margin: 0 auto;
-	max-width: 260px;
+	max-width: 560px;
 
 	@media (min-width: $breakpoint-medium) {
-		max-width: 648px;
+		max-width: 748px;
 	}
 
 	@media (min-width: $breakpoint-large) {

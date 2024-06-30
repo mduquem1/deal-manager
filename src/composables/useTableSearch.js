@@ -5,7 +5,7 @@ export function useTableSearch(data, columns) {
 	const { initialize, search } = useFuzzyMatch()
 	const searchKeyword = ref('')
 
-	// Filter out non-string columns
+	// filter out non-string columns
 	const searchableColumns = computed(() => {
 		return columns.filter((column) => column.type === 'string')
 	})

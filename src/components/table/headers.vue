@@ -1,12 +1,11 @@
 <script setup>
 import { SORT_ORDER } from '../../constants/index'
-import ArrowUp from '../ui/icons/arrow-up.vue'
 
 const props = defineProps({
 	tableHeaders: Array,
 	sortOrder: String,
 	sortBy: String,
-	areAllRowsSelected: Boolean,
+	allRowsSelected: Boolean,
 	selectCol: Function
 })
 
@@ -25,24 +24,27 @@ const selectCol = (index) => {
 	<thead>
 		<tr>
 			<th scope="col">
-				<input type="checkbox" @change="toggleSelectAll" :checked="areAllRowsSelected" />
+				<label>
+					<input
+						id="header-checkbox"
+						type="checkbox"
+						@change="toggleSelectAll"
+						:checked="allRowsSelected"
+				/></label>
 			</th>
 			<th
 				scope="col"
-				class="table__header"
-				:class="{ 'table__header--icon': header.value === sortBy }"
 				v-for="(header, index) in tableHeaders"
 				:key="header.value"
 				@click="selectCol(index)"
 			>
 				{{ header.text }}
-				<div
-					v-if="header.value === sortBy"
-					class="arrow-icon"
-					:style="{ 'rotate(90deg)': sortOrder === SORT_ORDER.DESC }"
+				<span
+					v-show="header.value === sortBy"
+					class="sort-indicator"
+					:class="{ rotate: sortOrder === SORT_ORDER.DESC }"
+					>-></span
 				>
-					<ArrowUp />
-				</div>
 			</th>
 		</tr>
 	</thead>
@@ -52,15 +54,18 @@ const selectCol = (index) => {
 input[type='checkbox'] {
 	cursor: pointer;
 }
-.table {
-	&__header {
-		&--icon {
-			display: flex;
+.sort-indicator {
+	min-width: $spacing-8;
+	min-height: $spacing-8;
+	margin-left: $spacing-8;
+	border-radius: $border-radius-4;
+	background-color: $color-surface-400;
+	display: inline-block;
+	transform: rotate(90deg);
+	transition: transform 0.3s ease;
+}
 
-			.arrow-icon {
-				max-width: $spacing-16;
-			}
-		}
-	}
+.sort-indicator.rotate {
+	transform: rotate(270deg);
 }
 </style>
