@@ -9,7 +9,6 @@ export function useExportCSV(selectedRows, tableHeaders, tableHeaderKeys, sorted
 	// build rows from 1 to n
 	// map over selected rows
 
-	console.log('selected rows inside useExport', selectedRows)
 	const selectedData = selectedRows.value.map((rowIndex) => {
 		// build row from sortedAndPaginatedData at selected rowIndex
 		const row = sortedAndPaginatedData.value[rowIndex]
